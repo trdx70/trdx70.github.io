@@ -34,7 +34,7 @@ p {
 }
 
 
-#showcase {
+#headerWrapper {
     background-image: url(../images/pexels-photo-860937.jpeg);
     height: 100vh;
     background-size: cover;
