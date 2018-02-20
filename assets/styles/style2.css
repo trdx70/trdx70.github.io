@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue";
+    font-size: 17px;
+    color: #dcae1d;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+    box-shadow: 3px 3px 9px #7a9d96;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+
+#showcase {
+    background-image: url(../images/pexels-photo-860937.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#sideIcon {
+    display: none;
+    color: #00303f;
+}
+
+.navbar {
+    display: flex;
+    align-items: baseline;
+}
+
+.navi ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+#navHeader {
+    margin-left: 70px;
+    padding-top: 50px;
+}
+
+#tagline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+#tagline p:first-of-type {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#tagline p:last-of-type {
+    color: #00303f;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: -70px;
+}
+
+#tagline .button {
+    font-size: 18px;
+    text-decoration: none;
+    color: #00303f;
+    border: #7a9d96 1px solid;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+#tagline .button:hover {
+    color: #cae4db;
+    background-color: #dcae1d;
+} 
+
+.navbar {
+    padding-top: 10px;
+    margin-left: 40px;
+}
+
+.navBurger {
+    margin-right: 10px;
+}
+
+.nav-brand #brand {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #cae4db;
+    margin-right: 50px;
+}
+
+.nav-brand #tag {
+    display: block;
+/*    color: #00303f;*/
+    color: white;
+    font-size: .9em;
+    margin: -20px 0 0 50px;
+    
+}
+
+.navi a {
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 5px;
+    color: #00303f;
+}
+
+.navi a:hover {
+    color: #00303f;
+    background-color: #cae4db;
+}
+
+#section-a {
+    background-color: #cae4db;
+}
+
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+
+.cards {
+    max-width: 25em;
+	margin: 1em auto;
+	padding: 0;
+	list-style-type: none;
+
+}
+
+.cards a {
+	display: block;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+
+.caption {
+	padding: 1em;
+	font-size: 90%;
+	color: black;
+}
+
+.cap-title {
+	margin: 0;
+	font-size: 1.4em;
+	line-height: 1em;
+}
+
+.caption p {
+	margin-top: .5em;
+	margin-bottom: 0;
+}
+
+.cards a:focus .caption,
+.cards a:hover .caption {
+	background: hsl(0, 0%, 97%);
+}
+
+.caption h3 {
+    color: 00303f;
+}
+
+@supports (grid-area: auto) {
+
+	@media screen and (min-width: 27em) {
+
+		.cards {
+			margin: 0 auto;
+			padding: 1em;
+		}
+
+		.card {
+			margin: 1em 0;
+			padding: .5em;
+			display: grid;
+			grid-template-columns: 8em auto;
+		}
+
+		.cards a:focus,
+		.cards a:hover {
+			outline: 1px solid hsl(0, 0%, 80%);
+		}
+
+
+	}
+
+	@media screen and (min-width: 60em) {
+
+		.cards {
+			max-width: none;
+/*			margin: 1em 0;*/
+			display: grid;
+			grid-template-columns: repeat(2, 25em);
+			grid-gap: 1em;
+            justify-content: center;
+		}
+
+		.card {
+			margin: 0;
+		}
+	   
+        .double {
+			grid-row: span 2;
+		}
+
+		.double .card {
+			display: block;
+		}
+
+	}
+
+}
+
+
+
+
+
